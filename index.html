@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gojek</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.css">
+
+    <style>    
+        nav ul li a{
+          color: black;
+        } 
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper white">
+          <ul id="nav-mobile" class="center hide-on-med-and-down">
+            <li><a href="#"><a><img src="img2/gojek.png" height="80" width="150" class="logo valign-wrapper"></a></li>
+            <li><a href="#">Tentang kami</a></li>
+            <li><a href="#">Layanan</a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">expand_more</i></a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Pusat Bantuan</a></li>
+            <li><a href="#">Gabung</a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Dropdown<i class="material-icons right">expand_more</i></a></li>
+            <li><a href="#">Aman</a></li>
+          </ul>
+        </div>
+    </nav>
+
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">Transportasi & Logistik</a></li>
+        <li><a href="#!">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">three</a></li>
+    </ul>
+    
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href="#!">Transportasi & Logistik</a></li>
+        <li><a href="#!">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">three</a></li>
+    </ul>
+
+    <div class="carousel carousel-slider center">
+        <div class="carousel-fixed-item center">
+          <a class="btn waves-effect green white-text darken-text-2">Klik di sini</a>
+        </div>
+        <div class="carousel-item black black-text" href="#one!">
+        <img src="img2/pasar.jpg">
+          <h2>First Panel</h2>
+          <p class="white-text">This is the first panel</p>
+        </div>
+        <div class="carousel-item grey white-text" href="#two!">
+          <h2>Second Panel</h2>
+          <p class="white-text">This is the second panel</p>
+        </div>
+        <div class="carousel-item green white-text" href="#three!">
+          <h2>Third Panel</h2>
+          <p class="white-text">This is the third panel</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 m12">
+            <div class="col s12 m6 offset-m1">
+            <img class="valign-wrapper responsive-img " src="img2/pasar.jpg" width="500" height="300">
+            </div>
+            <div class="col s12 m4">
+                <h1 style="font-size: 30x;">Tentang Yayasan Anak <br> Bangsa Bisa</h1>
+                <p>
+                    Yayasan Anak Bangsa Bisa adalah organisasi nirlaba yang didirikan oleh Gojek untuk mendukung kesetaraan dan membantu membangun mata pencarian yang berkelanjutan bagi masyarakat yang bergantung pada penghasilan harian.
+                </p>
+                <a href="#" class="green-text" style="font-size: 20px;">Cari Tau di sini<i class="material-icons right">arrow_forward</i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel carousel-slider">
+        <a class="carousel-item" href="#one!"><img src="img2/pasar.jpg"></a>
+        <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/800/400/food/2"></a>
+        <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/800/400/food/3"></a>
+        <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/800/400/food/4"></a>
+    </div>
+
+
+    <div class="footer grey darken-3 col s12 m12 left-align">
+        <div class="row">
+            <div class=" col s12 m3 offset-m1">
+                <img src="img2/gojek.png" alt="Logo" width="200" height="150" class="logo-end">
+            </div>
+            <div class=" col s12 m2">
+                <ul class="" style="font-size: 16px;">
+                    <li><a href="#" class="white-text">Tentang kami</a></li>
+                    <li><a href="#" class="white-text">Blog</a></li>
+                    <li><a href="#" class="white-text">Layanan</a></li>
+                    <li><a href="#" class="white-text">Karir</a></li>
+                    <li><a href="#" class="white-text">Pusat Media</a></li>
+                </ul>
+            </div>
+            <div class="col s12 m2">
+                <ul class="" style="font-size: 16px;">
+                    <li><a href="#" class="white-text">Pusat Bantuan</a></li>
+                    <li><a href="#" class="white-text">Kontak Kami</a></li>
+                    <li><a href="#" class="white-text">Driver Help Centre</a></li>
+                    <li><a href="#" class="white-text">Syarat & Ketentuan</a></li>
+                    <li><a href="#" class="white-text">Kebijakan Privasi</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>    
+
+<script>
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-2.1.1.min.js"
+</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    const sideNav = document.querySelectorAll('.sidenav');
+    M.Sidenav.init(sideNav);
+</script>
+<script>
+    $(document).ready(function(){
+    $('.carousel').carousel(
+    {
+        dist: 0,
+        padding: 0,
+        fullWidth: true,
+        indicators: true,
+        duration: 100,
+    }
+    );
+    });
+
+    autoplay()   
+    function autoplay() {
+        $('.carousel').carousel('next');
+        setTimeout(autoplay, 4500);
+    }
+</script>
+</body>
