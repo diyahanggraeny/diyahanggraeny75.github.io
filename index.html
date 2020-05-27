@@ -19,12 +19,10 @@
           <ul id="nav-mobile" class="center hide-on-med-and-down">
             <li><a href="#"><a><img src="img2/gojek.png" height="80" width="150" class="logo valign-wrapper"></a></li>
             <li><a href="#">Tentang kami</a></li>
-            <li><a href="#">Layanan</a></li>
-            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">expand_more</i></a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Layanan<i class="material-icons right">expand_more</i></a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Pusat Bantuan</a></li>
-            <li><a href="#">Gabung</a></li>
-            <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Dropdown<i class="material-icons right">expand_more</i></a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Gabung<i class="material-icons right">expand_more</i></a></li>
             <li><a href="#">Aman</a></li>
           </ul>
         </div>
@@ -134,6 +132,14 @@
     }
     );
     });
+
+    autoplay()   
+    function autoplay() {
+        $('.carousel').carousel('next');
+        setTimeout(autoplay, 4500);
+    }
+</script>
+</body>
 
     autoplay()   
     function autoplay() {
